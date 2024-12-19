@@ -1,13 +1,10 @@
-import React ,{ useEffect }  from 'react'
+import React  from 'react'
 import{useState} from 'react';
 import "./counter.css"
 const Counter = () => {
     const [countValue, setcountValue] = useState(0);
 
-    useEffect(() => {
-        console.log("hello");
-      },[]);
-      
+  
 
   return (
     <div>

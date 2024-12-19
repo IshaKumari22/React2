@@ -5,8 +5,8 @@ function App() {
   
   return (
     <div className="main-wrapper">
-      <Counter/>
-      {/* <Shopping/> */}
+      {/* <Counter/> */}
+      <Shopping/>
     </div>
   );
 }

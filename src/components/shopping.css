@@ -1,0 +1,11 @@
+.product-card{
+    background-color: white;
+    border:20px;
+    padding:20px;
+}
+.image-wrapper{
+    max-width: 300px;
+}
+.image-wrapper > img{
+    width:100%;
+}
