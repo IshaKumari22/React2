@@ -1,10 +1,13 @@
 import React  from 'react'
 import{useState} from 'react';
 import "./counter.css"
-const Counter = () => {
-    const [countValue, setcountValue] = useState(0);
+import { useRecoilState } from 'recoil';
+import CountValueAtom from '../recoil/CountValueAtom';
 
-  
+const Counter = () => {
+
+  const [countValue, setCountValue] = useRecoilState(CountValueAtom);
+
 
   return (
     <div>
@@ -12,12 +15,8 @@ const Counter = () => {
       <h1>{countValue}</h1>
     
       <div className="btn-group">
-        <button onClick={()=>setcountValue(countValue + 1)}>
-          increment
-          </button> 
-        <button onClick={()=>setcountValue(countValue - 1)}>
-          decrement
-          </button>
+        <button onClick={()=>setCountValue(countValue + 1)}>Increment</button> 
+        <button onClick={()=>setCountValue(countValue - 1)}>Decrement</button>
         </div>
       </div>
   )
